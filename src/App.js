@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Container from './components/Container';
 
-function App() {
+const App = () => {
+  const [saplingIn_Out, setSaplingIn_Out] = useState([]);
+  const [saplingMaster, setSaplingMaster] = useState([]);
+
+  useEffect(() => {
+ 
+    fetch('/saplinginwardoutward.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Response is not coming');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setSaplingIn_Out(data);
+      })
+      .catch((error) => console.error('Error fetching saplinginwardoutward.json:', error));
+
+    
+    fetch('/saplings_master.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Response is not coming');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setSaplingMaster(data);
+      })
+      .catch((error) => console.error('Error fetching saplings_master.json:', error));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Container sapling_master_data={saplingMaster}/>
     </div>
   );
-}
+};
 
 export default App;
