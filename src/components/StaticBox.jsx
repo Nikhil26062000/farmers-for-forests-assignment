@@ -3,7 +3,7 @@ import OwnerDeatil from './OwnerDeatil'
 
 const StaticBox = () => {
   return (
-    <div className='w-[30%] border border-[#dadada] '>
+    <div className='w-[30%] '>
         <p className='py-2 pr-2 bg-[#ecece5] font-bold text-sm text-end border border-[#dadada]'>WAREHOUSE NAME</p>
         <OwnerDeatil name="All stock by saplings" balance_stock_color="green"/>
         <OwnerDeatil name="Dhawalgaon-Shinde Suresh Baban" balance_stock_color="yellow"/>

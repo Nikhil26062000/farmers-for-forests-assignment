@@ -5,7 +5,7 @@ import SaplingsDetails from './SaplingsDetails'
 
 const Container = ({sapling_master_data,saplingIn_Out_data}) => {
   return (
-    <div className="w-[94%]  mx-auto my-[100px] flex">
+    <div className="w-[94%]  mx-auto flex">
         <StaticBox/>
         <SaplingsDetails sapling_master_data={sapling_master_data} saplingIn_Out_data={saplingIn_Out_data}/>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Container from './components/Container';
+import Header from './components/Header';
 
 const App = () => {
   const [saplingIn_Out, setSaplingIn_Out] = useState([]);
@@ -34,7 +35,8 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='w-[100%] my-[100px] mx-auto'>
+      <Header/>
      <Container sapling_master_data={saplingMaster} saplingIn_Out_data={saplingIn_Out}/>
     </div>
   );
