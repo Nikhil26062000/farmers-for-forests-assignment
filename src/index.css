@@ -21,3 +21,13 @@
 ::-webkit-scrollbar-thumb {
     background: rgb(2, 1, 1);
 } */
+
+.static-box {
+    position: -webkit-sticky; 
+    position: sticky;
+    left: 0; 
+    top: 0; 
+    z-index: 1;
+    
+  }
+  
