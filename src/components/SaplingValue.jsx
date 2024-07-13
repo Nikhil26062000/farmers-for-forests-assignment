@@ -44,8 +44,8 @@ const SaplingValue = ({
   }, []);
 
   return (
-    <div className=" min-w-[200px]  bg-[#ffffff] border border-[#dadada] border-b-[2px]">
-      <p className="bg-[#ecece5] w-[100%] text-center py-2 border border-[#dadada] text-sm font-bold">
+    <div className=" min-w-fit  bg-[#ffffff] border border-[#dadada] border-b-[2px]">
+      <p className="bg-[#ecece5] px-4 whitespace-nowrap w-[100%] text-center py-2 border border-[#dadada] text-sm font-bold">
         {sapling_master_data.saplings_name.toUpperCase()}
       </p>
       <div className="w-full   border border-[#dadada] py-2 px-2 text-end">
