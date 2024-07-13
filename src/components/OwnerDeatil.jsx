@@ -7,7 +7,7 @@ const OwnerDeatil = ({name,balance_stock_color}) => {
         <div className='text-center'>
             <p>Total stock</p>
             <p>Total Distrubute</p>
-            <p className={balance_stock_color === "green"  ? "bg-green-400" : "bg-yellow-400"}>Balance stock</p>
+            <p className={balance_stock_color === "green"  ? "bg-[#d7f0b4]" : "bg-[#ffff00]"}>Balance stock</p>
 
         </div>
     </div>

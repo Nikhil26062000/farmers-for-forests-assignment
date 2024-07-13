@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <div>
-     <Container sapling_master_data={saplingMaster}/>
+     <Container sapling_master_data={saplingMaster} saplingIn_Out_data={saplingIn_Out}/>
     </div>
   );
 };
