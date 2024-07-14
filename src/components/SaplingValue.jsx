@@ -44,11 +44,15 @@ const SaplingValue = ({
   }, []);
 
   return (
-    <div className=" min-w-fit  bg-[#ffffff] border border-[#dadada] border-b-[2px]">
-      <p className="bg-[#ecece5] px-4 whitespace-nowrap w-[100%] text-center py-2 border border-[#dadada] text-sm font-bold">
+    <div className=" min-w-fit bg-[#ffffff] border border-[#dadada] border-b-[2px]">
+     
+     
+
+     
+      <p className=" bg-[#ecece5] px-4 whitespace-nowrap w-[100%] text-center py-2  border-b-[1px] text-sm font-bold">
         {sapling_master_data.saplings_name.toUpperCase()}
       </p>
-      <div className="w-full   border border-[#dadada] py-2 px-2 text-end">
+      <div className=" w-full bg-white   py-2 px-2 text-end">
         <p className=" w-[100%] border pr-1">
           {all_stock_saplings && all_stock_saplings.sum_sapling_inward}
         </p>
@@ -60,9 +64,10 @@ const SaplingValue = ({
         <p className=" w-[100%] border pr-1 bg-[#d7f0b4]">
           {all_stock_saplings && all_stock_saplings.sapling_balance_stock}
         </p>
+      
       </div>
 
-      <div className="w-full   border border-[#dadada] py-2 px-2 text-end">
+      <div className="w-full border border-t-2 border-r-0 border-l-0 border-b-0 py-2 px-2 text-end">
         <p className=" w-[100%] border pr-1">
           {dhawalgaon_shinde_data && dhawalgaon_shinde_data.sum_sapling_inward}
         </p>
@@ -77,7 +82,7 @@ const SaplingValue = ({
             dhawalgaon_shinde_data.sapling_balance_stock}
         </p>
       </div>
-      <div className="w-full   border border-[#dadada] py-2 px-2 text-end">
+      <div className="w-full border border-t-2 border-r-0 border-l-0 border-b-0 py-2 px-2 text-end">
         <p className=" w-[100%] border pr-1">
           {ambad_govind_data && ambad_govind_data.sum_sapling_inward}
         </p>
@@ -90,7 +95,7 @@ const SaplingValue = ({
           {ambad_govind_data && ambad_govind_data.sapling_balance_stock}
         </p>
       </div>
-      <div className="w-full   border border-[#dadada] py-2 px-2 text-end">
+      <div className="w-full border border-t-2 border-r-0 border-l-0 border-b-0 py-2 px-2 text-end">
         <p className=" w-[100%] border pr-1">
           {karjat_navnath_data && karjat_navnath_data.sum_sapling_inward}
         </p>
@@ -103,6 +108,8 @@ const SaplingValue = ({
           {karjat_navnath_data && karjat_navnath_data.sapling_balance_stock}
         </p>
       </div>
+
+
     </div>
   );
 };

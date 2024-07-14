@@ -27,7 +27,31 @@
     position: sticky;
     left: 0; 
     top: 0; 
-    z-index: 1;
+    z-index: 20;
     
   }
+
+  .static-box2 {
+    position: -webkit-sticky; 
+    position: sticky;
+
+    top: 0!important; 
+    z-index: 10;
+    
+  }
+
+  .static-box3 {
+    position: -webkit-sticky; 
+    position: sticky;
+
+    top: 0; 
+    z-index: 15;
+    
+  }
+
+  .scroll-bar::-webkit-scrollbar{
+    width:0px !important;
+    height: 0px !important;
+
+}
   
