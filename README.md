@@ -1,3 +1,34 @@
+# Sapling Stock Management Assignment
+
+This project renders and displays data from two JSON files on the frontend. The JSON files contain information about sapling stock by saplings and warehouses, and the data is presented in a structured format on the frontend.
+
+## JSON Files
+
+1. **Sapling_stock_res_by_sapling array**
+   - This array contains data about all stock by saplings, displayed as rows under "All Stock by Saplings".
+
+2. **Sapling_stock_res_by_warehouse array**
+   - This array contains data about different warehouses, displayed as rows with different warehouse names.
+
+## Data Display
+
+- **Total Stock**: Derived from the `sapling inward` data.
+- **Total Distribution**: Derived from the `sapling outward` data.
+- **Balance Stock**: Derived from all the `sapling balance stock`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
